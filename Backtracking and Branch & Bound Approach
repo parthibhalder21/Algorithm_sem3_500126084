@@ -1,0 +1,17 @@
+Comparison-
+
+Backtracking:
+Time Complexity: O(2n), where n is the number of items. This is because it explores all possible combinations of items.
+Space Complexity: O(n) for the recursion stack.
+Performance: This approach is inefficient for larger problems, as it explores every subset of items, making it unsuitable for large datasets.
+
+Branch and Bound:
+Time Complexity: O(2n) in the worst case. However, it can be much better than backtracking due to pruning, making it more efficient in practice.
+Space Complexity: O(n) for the recursion stack.
+Performance: Branch and Bound reduces the search space by pruning, which improves the performance compared to pure backtracking, but it is still exponential in the worst case.
+
+Dynamic Programming:
+Time Complexity: O(nW), where n is the number of items and W is the knapsack capacity.
+Space Complexity: O(nW) for the DP table.
+Performance: This is the most efficient approach among the three, particularly when the problem size grows large. 
+The DP approach guarantees optimal solutions in polynomial time, making it the best for solving knapsack problems with large inputs.
